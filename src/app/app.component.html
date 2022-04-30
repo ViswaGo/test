@@ -1,12 +1,9 @@
 <h1>API</h1>
-<a href="www.google.com" rel="noopener noreferrer" target="_blank">Link</a>
-<div>
-  <h1>Hi I'm Doing</h1>
+<router-outlet></router-outlet>
+<div class="myCard">
+  <h1>Hi</h1>
+  <button type="button" class="btn btn-primary" (click)="toGo()">Employee</button>
 </div>
-<ul>
-  <li *ngFor="let city of cities">
-    {{city.name}}
-
-  </li>
-</ul>
+<br />
+<button type="submit" class="btn btn-warning" (click)="doIt()">click</button>
 
