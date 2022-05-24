@@ -12,6 +12,17 @@ import { ShowEmpComponent } from './employee/show-emp/show-emp.component';
 import { AddEditEmpComponent } from './employee/add-edit-emp/add-edit-emp.component'
 import { SharedService } from './shared.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { DropDownComponent } from './drop-down/drop-down.component';
+
+
+
 
 
 @NgModule({
@@ -22,13 +33,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AddEditDeptComponent,
     EmployeeComponent,
     ShowEmpComponent,
-    AddEditEmpComponent
+    AddEditEmpComponent,
+    DropDownComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,ReactiveFormsModule
+    FormsModule,ReactiveFormsModule, BrowserAnimationsModule,MatSidenavModule,
+    MatCardModule,MatGridListModule,MatToolbarModule,MatIconModule,MatAutocompleteModule
   ],
   providers: [SharedService],
   bootstrap: [AppComponent]
